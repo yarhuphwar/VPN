@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Gateway</title>
+  <link rel="icon" href="logo.png">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .payment-box {
+      background: #222;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      padding: 30px;
+      width: 350px;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      border: 2px solid #39ff14; /* Neon green border */
+    }
+
+    .payment-name {
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #39ff14; /* Neon green */
+    }
+
+    .payment-icons {
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .payment-icon {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .payment-row {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      align-items: center;
+      width: 100%;
+    }
+
+    .payment-number,
+    .holder-name {
+      background: #333;
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-family: monospace;
+      font-size: 1rem;
+      color: #fff;
+      width: 100%;
+    }
+
+    .holder-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .copy-btn {
+      background: #39ff14;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.3s;
+      font-weight: bold;
+    }
+
+    .copy-btn:hover {
+      background: #28a745;
+    }
+
+    .copy-btn:focus {
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="payment-box">
+    <div class="payment-name">Payment Methods</div>
+
+    <!-- Payment icons -->
+    <div class="payment-icons">
+      <img class="payment-icon" src="https://www.kbzpay.com/wp-content/uploads/sites/9/2020/04/blue-L.png" alt="PayPal">
+      <img class="payment-icon" src="https://play-lh.googleusercontent.com/rPq4GMCZy12WhwTlanEu7RzxihYCgYevQHVHLNha1VcY5SU1uLKHMd060b4VEV1r-OQ=s48-rw" alt="Visa">
+      <img class="payment-icon" src="https://play-lh.googleusercontent.com/t4ur8SEt6O2RgZCDC1l62lB6elFPxYySoh-bZqozC8O38xP9WQBhnXt-H0W4w9MyN2I=w240-h480-rw" alt="MasterCard">
+      <img class="payment-icon" src="https://images.sftcdn.net/images/t_app-icon-s/p/548de33a-4587-4892-a9ea-fcaa74213a4a/3430207495/uabpay-logo" alt="Bitcoin">
+    </div>
+
+    <!-- Holder Name -->
+    <div class="holder-name" id="holder-name">Hlaing Htet Aung</div>
+
+    <!-- Payment number and copy button -->
+    <div class="payment-row">
+      <div class="payment-number" id="payment-number">09961727200</div>
+      <button class="copy-btn" onclick="copyText('payment-number')">Copy</button>
+    </div>
+  </div>
+
+  <script>
+    function copyText(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Copied to clipboard!');
+      });
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

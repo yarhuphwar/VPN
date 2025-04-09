@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.menu-container {
+    background-color: #333; /* Menu ရဲ့ နောက်ခံအရောင် */
+    width: 200px; /* Menu ရဲ့ အကျယ် */
+    padding: 20px;
+    position: fixed; /* စခရင်မှာ အမြဲပေါ်နေစေဖို့ */
+    top: 0;
+    left: 0;
+    height: 100%;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); /* အရိပ်ထိုးခြင်း */
+}
+
+.menu {
+    list-style: none; /* အမှတ်သင်္ကေတများ ဖယ်ရှားခြင်း */
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 10px; /* Menu item တစ်ခုနဲ့တစ်ခုကြား အကွာအဝေး */
+}
+
+.menu a {
+    display: block; /* တစ်လိုင်းလုံး ယူထားဖို့ */
+    color: white; /* စာသားအရောင် */
+    text-decoration: none; /* underline ဖယ်ရှားခြင်း */
+    padding: 10px;
+    border-radius: 5px; /* အဝိုင်းပုံစံ */
+    transition: background-color 0.3s ease; /* Hover လုပ်တဲ့အခါ အပြောင်းအလဲကို ချောမွေ့စေဖို့ */
+}
+
+.menu a:hover {
+    background-color: #555; /* Hover လုပ်တဲ့အခါ နောက်ခံအရောင်ပြောင်းလဲခြင်း */
+}
+
+/* ပိုပြီး စတိုင်ကျအောင် ထပ်ထည့်နိုင်တဲ့ CSS */
+.menu a::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #007bff; /* အမှတ်သင်္ကေတအရောင် */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.menu a.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.menu a.active::before {
+    background-color: white;
+}
